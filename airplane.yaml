@@ -1,0 +1,8 @@
+train: datasets/images/train
+val: datasets/images/val
+test: datasets/images/test
+
+nc: 1  # Number of classes
+
+names:
+  - airplane  # Name of the single class
