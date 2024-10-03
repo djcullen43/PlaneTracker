@@ -25,7 +25,7 @@ Before detecting objects, the program checks for significant scene changes by co
 The model detects airplanes in each frame of the video and assigns a unique ID to each detected object. The program keeps track of these objects and updates their detection history across frames.
 
 For each detected airplane, the corresponding image region is cropped and classified using the MobileNetV2 model. The model predicts the type of aircraft and provides a confidence score for each prediction.
-The program uses a history-based approach to stabilize classifications for each object. O
+The program uses a history-based approach to stabilize classifications for each object.
 
 If a new classification is detected, the program waits for several frames to confirm the change before updating the label. This reduces the likelihood of false label changes due to short-term misclassifications.
 
